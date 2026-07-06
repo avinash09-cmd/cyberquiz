@@ -100,21 +100,22 @@ const stack = {
 ---
 
 ## 📁 FILE STRUCTURE
-cyberquiz/
-├── 📂 src/
-│   ├── 📂 components/     # GlassCard, NeonButton, Navbar, Footer
-│   ├── 📂 pages/          # Home, Quiz, Dashboard, Learn, About, 404
-│   ├── 📂 data/
-│   │   ├── 📂 quizzes/    # 5 question files (10 questions each)
-│   │   ├── learnCards.js  # Learning content
-│   │   └── quizMeta.js    # Category config
-│   ├── 📂 hooks/          # useQuizTimer, useLocalStorage
-│   ├── 📂 utils/          # storage.js — XP, scores, streaks
-│   └── 📂 styles/         # globals.css — cyber animations
-├── vite.config.js         # GitHub Pages base config
-└── tailwind.config.js     # Custom cyber theme tokens
 
----
+```
+cyberquiz/
+├── src/
+│   ├── components/     # GlassCard, NeonButton, Navbar, Footer
+│   ├── pages/          # Home, Quiz, Dashboard, Learn, About, 404
+│   ├── data/
+│   │   ├── quizzes/    # 5 question files (10 questions each)
+│   │   ├── learnCards.js
+│   │   └── quizMeta.js
+│   ├── hooks/          # useQuizTimer, useLocalStorage
+│   ├── utils/          # storage.js — XP, scores, streaks
+│   └── styles/         # globals.css — cyber animations
+├── vite.config.js
+└── tailwind.config.js
+```
 
 ## 🚀 DEPLOY LOCALLY
 
