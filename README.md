@@ -1,135 +1,175 @@
-# 🛡️ CyberQuiz
+<div align="center">
+░█████╗░██╗░░░██╗██████╗░███████╗██████╗░░██████╗░██╗░░░██╗██╗███████╗
+██╔══██╗╚██╗░██╔╝██╔══██╗██╔════╝██╔══██╗██╔═══██╗██║░░░██║██║╚════██║
+██║░░╚═╝░╚████╔╝░██████╦╝█████╗░░██████╔╝██║██╗██║██║░░░██║██║░░███╔═╝
+██║░░██╗░░╚██╔╝░░██╔══██╗██╔══╝░░██╔══██╗╚██████╔╝██║░░░██║██║██╔══╝░░
+╚█████╔╝░░░██║░░░██████╦╝███████╗██║░░██║░╚═██╔═╝░╚██████╔╝██║███████╗
+░╚════╝░░░░╚═╝░░░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚═╝╚══════╝
 
-A futuristic cybersecurity quiz platform built with React + Vite. Fully static — deployable directly on GitHub Pages with zero backend.
+<br/>
 
-![CyberQuiz Screenshot](https://img.shields.io/badge/Status-Live-00d4ff?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-7b2fff?style=for-the-badge)
-![React](https://img.shields.io/badge/React-18-00d4ff?style=for-the-badge&logo=react)
-![Vite](https://img.shields.io/badge/Vite-5-7b2fff?style=for-the-badge&logo=vite)
+![Status](https://img.shields.io/badge/STATUS-ONLINE-00ff88?style=for-the-badge&logo=statuspage&logoColor=black)
+![React](https://img.shields.io/badge/REACT-18-00d4ff?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/VITE-5-7b2fff?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind](https://img.shields.io/badge/TAILWIND-3-0066ff?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/DEPLOYED-GITHUB%20PAGES-00d4ff?style=for-the-badge&logo=github&logoColor=black)
 
----
+<br/>
 
-## ✨ Features
+> **`[ SYSTEM ONLINE ] — Test your cybersecurity knowledge. Earn XP. Level up. Stay secure. ]`**
 
-- **5 quiz categories** — Password Security, Phishing, Network Security, Malware, Web Security
-- **50+ curated questions** with real-world explanations
-- **30-second countdown timer** per question
-- **XP system** — earn points, level up from Rookie to Cyber Sentinel
-- **Dashboard** — track best scores, streaks, and accuracy
-- **Learning Center** — 6 expandable topic cards with key points and prevention tips
-- **LocalStorage persistence** — all data saved client-side, no login required
-- **Fully responsive** — works on mobile, tablet, and desktop
-- **Animated background** — canvas particle system with glassmorphism cards
-- **Neon cyber aesthetic** — dark background, cyan/blue neon, Framer Motion animations
+<br/>
 
----
+### 🌐 [LAUNCH CYBERQUIZ →](https://avinash09-cmd.github.io/cyberquiz/)
 
-## 🚀 Tech Stack
-
-| Tool | Version | Purpose |
-|------|---------|---------|
-| React | 18 | UI framework |
-| Vite | 5 | Build tool & dev server |
-| Tailwind CSS | 3 | Utility-first styling |
-| Framer Motion | 11 | Animations |
-| React Router | 6 | Client-side routing |
-| React Icons | 5 | Icon library |
-| LocalStorage | — | Client-side data persistence |
+</div>
 
 ---
 
-## 📁 Project Structure
-
-```
-src/
-├── components/       # Reusable UI: GlassCard, NeonButton, ProgressBar, StatCard
-├── data/
-│   ├── quizzes/      # 5 quiz files — each exports 10 questions
-│   ├── learnCards.js # Learning content for all 6 topics
-│   └── quizMeta.js   # Quiz metadata (title, color, XP reward)
-├── hooks/
-│   ├── useLocalStorage.js  # Persistent state hook
-│   └── useQuizTimer.js     # Countdown timer with color feedback
-├── layouts/
-│   └── MainLayout.jsx      # Navbar + Footer + AnimatedBackground wrapper
-├── pages/            # Home, Quiz, Dashboard, Learn, About, NotFound
-├── utils/
-│   └── storage.js    # All LocalStorage read/write logic
-└── styles/
-    └── globals.css   # Tailwind base + custom cyber animations
-```
-
----
-
-## ⚙️ Local Development
+## ⚡ INITIALIZING SYSTEM...
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/cyberquiz.git
-cd cyberquiz
-
-# 2. Install dependencies
-npm install
-
-# 3. Start dev server
-npm run dev
-# → http://localhost:5173/cyberquiz/
+> LOADING MODULES.............. [OK]
+> SCANNING QUIZ DATABASE........ [OK]
+> CONNECTING TO DASHBOARD........ [OK]
+> RENDERING UI.................. [OK]
+> SYSTEM STATUS................. [ONLINE]
 ```
+
+> A fully static cybersecurity quiz platform I built from scratch.
+> No backend. No database. No login. Everything runs in your browser.
+> Built to look like a real security platform — and to actually teach something.
 
 ---
 
-## 🌐 Deploy to GitHub Pages
+## 🗂️ MODULES
 
-### One-time setup
-
-1. Create a GitHub repository named `cyberquiz`
-2. Update `vite.config.js`:
-   ```js
-   base: '/cyberquiz/',   // ← your repo name
-   ```
-3. Update `src/main.jsx`:
-   ```jsx
-   <BrowserRouter basename="/cyberquiz">  // ← your repo name
-   ```
-4. Push to GitHub and enable Pages (Settings → Pages → Deploy from branch `gh-pages`)
-
-### Deploy
-
-```bash
-npm run deploy
-```
-
-This runs `vite build` then `gh-pages -d dist` — your site will be live at:
-`https://YOUR_USERNAME.github.io/cyberquiz/`
+| MODULE | DESCRIPTION | STATUS |
+|--------|-------------|--------|
+| 🔐 Password Security | Credential hygiene, hashing, MFA | `ACTIVE` |
+| 🎣 Phishing Attacks | Social engineering, email spoofing | `ACTIVE` |
+| 🌐 Network Security | Firewalls, VPNs, DDoS, MitM | `ACTIVE` |
+| 🐛 Malware | Ransomware, rootkits, botnets | `ACTIVE` |
+| 💻 Web Security | XSS, SQLi, CSRF, OWASP Top 10 | `ACTIVE` |
 
 ---
 
-## 📝 Adding Quiz Questions
+## 🎮 FEATURES
+┌─────────────────────────────────────────────────────┐
+│                                                     │
+│  ⚡  50+ questions across 5 cybersecurity domains   │
+│  ⏱️  30-second countdown timer per question         │
+│  💡  Instant explanations after every answer        │
+│  🏆  XP system — rank up from Rookie to Sentinel    │
+│  📊  Personal dashboard with scores and streaks     │
+│  📚  6 in-depth learning cards with tips            │
+│  📱  Fully responsive — mobile and desktop          │
+│  🔒  Zero tracking — all data stays in your browser │
+│                                                     │
+└─────────────────────────────────────────────────────┘
 
-All questions live in `src/data/quizzes/`. Each file exports an array of question objects:
+---
 
-```js
-{
-  id: 11,
-  question: "What is a zero-day vulnerability?",
-  options: ["Option A", "Option B", "Option C", "Option D"],
-  correct: 1,           // 0-indexed correct answer
-  explanation: "A clear, educational explanation shown after answering.",
+## 🧬 RANK SYSTEM
+
+| XP RANGE | RANK | LEVEL |
+|----------|------|-------|
+| 0 — 199 | Rookie | ⬜ 1 |
+| 200 — 599 | Junior Hacker | 🟩 2 |
+| 600 — 1199 | Security Analyst | 🟦 3 |
+| 1200 — 1999 | Threat Hunter | 🟪 4 |
+| 2000+ | Cyber Sentinel | 🟥 5 |
+
+---
+
+## 🛠️ TECH STACK
+
+```javascript
+const stack = {
+  framework:   "React 18",
+  bundler:     "Vite 5",
+  styling:     "Tailwind CSS 3",
+  animations:  "Framer Motion 11",
+  routing:     "React Router v6",
+  storage:     "LocalStorage (zero backend)",
+  deployment:  "GitHub Pages",
+  design:      "Glassmorphism + Neon Cyber Theme",
 }
 ```
 
 ---
 
-## 🎨 Customization
-
-The color palette lives in `tailwind.config.js` under `theme.extend.colors.cyber`. Change the neon colors there and the whole app updates.
+## 📁 FILE STRUCTURE
+cyberquiz/
+├── 📂 src/
+│   ├── 📂 components/     # GlassCard, NeonButton, Navbar, Footer
+│   ├── 📂 pages/          # Home, Quiz, Dashboard, Learn, About, 404
+│   ├── 📂 data/
+│   │   ├── 📂 quizzes/    # 5 question files (10 questions each)
+│   │   ├── learnCards.js  # Learning content
+│   │   └── quizMeta.js    # Category config
+│   ├── 📂 hooks/          # useQuizTimer, useLocalStorage
+│   ├── 📂 utils/          # storage.js — XP, scores, streaks
+│   └── 📂 styles/         # globals.css — cyber animations
+├── vite.config.js         # GitHub Pages base config
+└── tailwind.config.js     # Custom cyber theme tokens
 
 ---
 
-## 📄 License
+## 🚀 DEPLOY LOCALLY
 
-MIT — free to use, fork, and deploy.
+```bash
+# Clone the repository
+git clone https://github.com/avinash09-cmd/cyberquiz.git
+
+# Navigate into the project
+cd cyberquiz
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Production build
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+> Live at → **http://localhost:5173/cyberquiz/**
 
 ---
 
-*Built for educational purposes. No personal data is collected. Everything runs in your browser.*
+## 🎨 DESIGN SYSTEM
+
+```css
+--cyber-bg:     #0a0f1e;   /* Deep navy background    */
+--cyber-cyan:   #00d4ff;   /* Primary neon accent      */
+--cyber-blue:   #0066ff;   /* Secondary accent         */
+--cyber-violet: #7b2fff;   /* XP / level accent        */
+--cyber-green:  #00ff88;   /* Success / correct        */
+--cyber-red:    #ff3860;   /* Danger / wrong answer    */
+```
+
+---
+
+## 📖 WHAT I LEARNED
+
+- Building a full multi-page React app with React Router v6
+- Designing a glassmorphism UI with Tailwind CSS custom tokens
+- Animating components with Framer Motion
+- Managing client-side state and persistence with LocalStorage
+- Configuring Vite for GitHub Pages static deployment
+- Writing clean, reusable component architecture
+
+---
+
+<div align="center">
+[ BUILT BY AVINASH ]  [ OPEN SOURCE ]  [ FORK IT. IMPROVE IT. DEPLOY IT. ]
+
+![Visitors](https://img.shields.io/badge/MADE%20WITH-REACT-00d4ff?style=for-the-badge&logo=react&logoColor=black)
+![Love](https://img.shields.io/badge/AND-HARD%20WORK-ff3860?style=for-the-badge)
+
+</div>
