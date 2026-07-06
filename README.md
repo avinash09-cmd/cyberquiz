@@ -55,6 +55,8 @@
 ---
 
 ## 🎮 FEATURES
+
+```
 ┌─────────────────────────────────────────────────────┐
 │                                                     │
 │  ⚡  50+ questions across 5 cybersecurity domains   │
