@@ -1,0 +1,123 @@
+// Web Security Quiz - 10 questions
+export const webSecurity = [
+  {
+    id: 1,
+    question: "What is a Cross-Site Scripting (XSS) attack?",
+    options: [
+      "Attacking a website by sending malformed XML data",
+      "Injecting malicious scripts into web pages viewed by other users",
+      "Cross-referencing stolen credentials across websites",
+      "Intercepting cookies between a browser and server",
+    ],
+    correct: 1,
+    explanation: "XSS injects malicious JavaScript into pages served to other users. The script runs in the victim's browser with the site's trust level, stealing cookies or redirecting users.",
+  },
+  {
+    id: 2,
+    question: "What does SQL injection allow an attacker to do?",
+    options: [
+      "Inject code into JavaScript files",
+      "Manipulate or extract database data by inserting SQL commands into input fields",
+      "Execute commands on the web server's operating system",
+      "Slow down a database server",
+    ],
+    correct: 1,
+    explanation: "SQL injection inserts malicious SQL into queries. For example, entering ' OR '1'='1 might bypass login, while UNION attacks can dump entire database tables.",
+  },
+  {
+    id: 3,
+    question: "What is a CSRF (Cross-Site Request Forgery) attack?",
+    options: [
+      "Forging server certificates to intercept HTTPS traffic",
+      "Tricking a logged-in user's browser into making unauthorized requests to a trusted site",
+      "Requesting data from a cross-origin server",
+      "Faking a website's SSL certificate",
+    ],
+    correct: 1,
+    explanation: "CSRF tricks authenticated users into unknowingly sending requests (like bank transfers) to a site where they're logged in, using the user's own browser and session.",
+  },
+  {
+    id: 4,
+    question: "What HTTP header helps prevent XSS attacks?",
+    options: [
+      "X-Frame-Options",
+      "Content-Security-Policy (CSP)",
+      "Strict-Transport-Security",
+      "X-Forwarded-For",
+    ],
+    correct: 1,
+    explanation: "Content-Security-Policy (CSP) tells the browser which sources of content (scripts, images, etc.) are trusted, blocking injection of unauthorized scripts.",
+  },
+  {
+    id: 5,
+    question: "What does HTTPS provide over HTTP?",
+    options: [
+      "Faster page load times",
+      "Encryption in transit and server identity verification",
+      "Protection against SQL injection",
+      "Anonymity for the user's IP address",
+    ],
+    correct: 1,
+    explanation: "HTTPS uses TLS to encrypt data between browser and server, preventing eavesdropping and verifying the server's identity via digital certificates.",
+  },
+  {
+    id: 6,
+    question: "What is an IDOR (Insecure Direct Object Reference) vulnerability?",
+    options: [
+      "A flaw in how HTML IDs are assigned",
+      "When an app exposes internal object references (like user IDs) without authorization checks",
+      "Insecure storage of encryption keys",
+      "A JavaScript error in object initialization",
+    ],
+    correct: 1,
+    explanation: "IDOR occurs when a user can access /api/users/1234 but also access /api/users/1235 (another user's data) simply by changing the ID — no authorization check is enforced.",
+  },
+  {
+    id: 7,
+    question: "What does the SameSite cookie attribute protect against?",
+    options: [
+      "XSS attacks",
+      "CSRF attacks by restricting when cookies are sent with cross-site requests",
+      "Clickjacking attacks",
+      "Man-in-the-middle attacks",
+    ],
+    correct: 1,
+    explanation: "SameSite=Strict or Lax prevents browsers from sending cookies with cross-site requests, neutralizing most CSRF attacks without requiring additional tokens.",
+  },
+  {
+    id: 8,
+    question: "What is a 'security misconfiguration' as defined by OWASP?",
+    options: [
+      "Using outdated encryption algorithms",
+      "Improper security settings — default credentials, open cloud storage, verbose error messages",
+      "Writing insecure JavaScript functions",
+      "Failing to encrypt database backups",
+    ],
+    correct: 1,
+    explanation: "Security misconfiguration is the #1 OWASP finding — things like default admin passwords, directory listing enabled, debug mode in production, or overly permissive S3 buckets.",
+  },
+  {
+    id: 9,
+    question: "What is clickjacking?",
+    options: [
+      "Hijacking mouse click events in JavaScript",
+      "Hiding a malicious page under a transparent, legitimate-looking UI to trick users into clicking",
+      "Recording all mouse clicks on a website",
+      "Rapidly clicking to bypass CAPTCHA",
+    ],
+    correct: 1,
+    explanation: "Clickjacking embeds a target site in a transparent iframe overlaid on a decoy page. The user thinks they're clicking one thing, but they're actually clicking on the hidden site.",
+  },
+  {
+    id: 10,
+    question: "What best describes 'defense in depth' for web applications?",
+    options: [
+      "Having the deepest possible firewall rules",
+      "Layering multiple independent security controls so that failure of one layer doesn't cause total compromise",
+      "Encrypting data at every network layer",
+      "Hiring multiple security teams to audit the same code",
+    ],
+    correct: 1,
+    explanation: "Defense in depth means no single control is relied upon entirely. Input validation, WAF, parameterized queries, least privilege, and monitoring form overlapping layers of protection.",
+  },
+]

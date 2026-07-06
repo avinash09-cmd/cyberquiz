@@ -1,0 +1,120 @@
+// Phishing Quiz - 10 questions
+export const phishing = [
+  {
+    id: 1,
+    question: "What is spear phishing?",
+    options: [
+      "Mass phishing emails sent to millions of users",
+      "Targeted phishing aimed at a specific individual or organization",
+      "Phishing conducted via phone calls",
+      "Automated password brute-forcing",
+    ],
+    correct: 1,
+    explanation: "Spear phishing is highly targeted — attackers research their victim and craft convincing, personalized messages. It's far more dangerous than mass phishing.",
+  },
+  {
+    id: 2,
+    question: "You receive an email from 'security@paypa1.com' asking you to verify your account. What should you do?",
+    options: [
+      "Click the link and enter your credentials",
+      "Reply and ask if it's legitimate",
+      "Recognize the misspelled domain and report it as phishing",
+      "Forward it to friends to warn them",
+    ],
+    correct: 2,
+    explanation: "'paypa1.com' uses the digit '1' instead of the letter 'l' — a classic typosquatting technique. Always inspect URLs carefully before clicking.",
+  },
+  {
+    id: 3,
+    question: "What is 'vishing'?",
+    options: [
+      "Phishing via video calls",
+      "Voice phishing — social engineering over phone calls",
+      "Visual phishing using fake websites",
+      "Phishing via virtual reality environments",
+    ],
+    correct: 1,
+    explanation: "Vishing (voice phishing) involves calling victims while impersonating banks, government agencies, or tech support to extract sensitive information.",
+  },
+  {
+    id: 4,
+    question: "A phishing email creates urgency: 'Your account will be suspended in 24 hours!' What psychological technique is this?",
+    options: [
+      "Reciprocity", "Scarcity and urgency", "Social proof", "Authority mirroring",
+    ],
+    correct: 1,
+    explanation: "Urgency and scarcity pressure victims into acting without thinking. Attackers use deadlines and threats to bypass rational decision-making.",
+  },
+  {
+    id: 5,
+    question: "What is smishing?",
+    options: [
+      "Phishing via social media",
+      "Phishing via SMS text messages",
+      "Small-scale phishing targeting one person",
+      "Phishing via email spoofing",
+    ],
+    correct: 1,
+    explanation: "Smishing uses SMS messages to deliver phishing links or requests. Mobile users are often less cautious than desktop users, making it effective.",
+  },
+  {
+    id: 6,
+    question: "Which URL is MOST likely to be a phishing site?",
+    options: [
+      "https://www.amazon.com/login",
+      "https://amazon.login-secure.net/verify",
+      "https://smile.amazon.com",
+      "https://aws.amazon.com",
+    ],
+    correct: 1,
+    explanation: "The legitimate domain is 'amazon.com'. In 'amazon.login-secure.net', the real domain is 'login-secure.net' — Amazon is just a subdomain to deceive you.",
+  },
+  {
+    id: 7,
+    question: "What does DMARC protect against?",
+    options: [
+      "SQL injection in email forms",
+      "Email spoofing and domain impersonation",
+      "Malware in email attachments",
+      "Brute-force logins to email accounts",
+    ],
+    correct: 1,
+    explanation: "DMARC (Domain-based Message Authentication) uses SPF and DKIM to verify senders, preventing attackers from sending emails that appear to come from your domain.",
+  },
+  {
+    id: 8,
+    question: "What is a 'watering hole' attack?",
+    options: [
+      "Poisoning a public water utility's systems",
+      "Infecting websites frequently visited by a target group",
+      "Flooding a server with requests",
+      "Intercepting data at a public Wi-Fi hotspot",
+    ],
+    correct: 1,
+    explanation: "Attackers identify websites their targets visit frequently and inject malware into those legitimate sites — 'poisoning the watering hole' the prey drinks from.",
+  },
+  {
+    id: 9,
+    question: "Your CEO urgently emails you to wire $50,000 to a vendor. You should:",
+    options: [
+      "Process it immediately — the CEO's authority is clear",
+      "Verify the request via a separate communication channel (phone call)",
+      "Reply to the email asking for confirmation",
+      "Send half now and wait for further instructions",
+    ],
+    correct: 1,
+    explanation: "This is a Business Email Compromise (BEC) attack. Always verify unusual financial requests via a DIFFERENT channel — call the CEO directly, don't reply to the suspicious email.",
+  },
+  {
+    id: 10,
+    question: "What is the purpose of an email's 'Reply-To' field in phishing?",
+    options: [
+      "To encrypt the email contents",
+      "To redirect replies to the attacker's address while the 'From' shows a legitimate address",
+      "To bypass spam filters",
+      "To add tracking pixels to the email",
+    ],
+    correct: 1,
+    explanation: "Attackers set 'Reply-To' to their own address while spoofing a trusted 'From' address. When you reply, your response goes to the attacker, not the apparent sender.",
+  },
+]

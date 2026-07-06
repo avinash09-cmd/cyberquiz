@@ -1,0 +1,108 @@
+// Password Security Quiz - 10 questions
+export const passwordSecurity = [
+  {
+    id: 1,
+    question: "What is the minimum recommended length for a strong password according to NIST 2024 guidelines?",
+    options: ["8 characters", "12 characters", "15 characters", "6 characters"],
+    correct: 1,
+    explanation: "NIST now recommends passwords be at least 15 characters. Longer passphrases are preferred over complex but short passwords.",
+  },
+  {
+    id: 2,
+    question: "Which of the following is considered the MOST secure password practice?",
+    options: [
+      "Using the same strong password on all accounts",
+      "Changing your password every 30 days",
+      "Using a password manager with unique passwords per site",
+      "Writing passwords on paper in a secured drawer",
+    ],
+    correct: 2,
+    explanation: "Password managers generate and store unique, complex passwords for each site — eliminating credential reuse, the #1 cause of account takeovers.",
+  },
+  {
+    id: 3,
+    question: "What does 'credential stuffing' mean?",
+    options: [
+      "Adding extra characters to a password",
+      "Trying leaked username/password pairs on other websites",
+      "Brute-forcing passwords letter by letter",
+      "Encrypting passwords with salt",
+    ],
+    correct: 1,
+    explanation: "Credential stuffing uses real leaked credentials from data breaches and tries them on other websites, exploiting password reuse.",
+  },
+  {
+    id: 4,
+    question: "Which hashing algorithm is MOST appropriate for storing passwords in 2024?",
+    options: ["MD5", "SHA-1", "bcrypt / Argon2", "Base64"],
+    correct: 2,
+    explanation: "bcrypt and Argon2 are slow by design, making brute-force attacks costly. MD5 and SHA-1 are cryptographically broken. Base64 is encoding, not encryption.",
+  },
+  {
+    id: 5,
+    question: "What is a 'salt' in the context of password hashing?",
+    options: [
+      "A secret key shared between client and server",
+      "A random value added to a password before hashing",
+      "A method to compress password files",
+      "An encryption layer on top of a hash",
+    ],
+    correct: 1,
+    explanation: "A salt is a unique random string added to each password before hashing, preventing rainbow table attacks and ensuring identical passwords produce different hashes.",
+  },
+  {
+    id: 6,
+    question: "Which of the following passwords is the STRONGEST?",
+    options: [
+      "P@ssw0rd!",
+      "Correct-Horse-Battery-Staple",
+      "abc123456789",
+      "MyBirthday1990!",
+    ],
+    correct: 1,
+    explanation: "A random passphrase like 'Correct-Horse-Battery-Staple' is longer, more memorable, and significantly harder to crack than complex-but-short passwords.",
+  },
+  {
+    id: 7,
+    question: "What is Multi-Factor Authentication (MFA)?",
+    options: [
+      "Using multiple passwords for one account",
+      "Verifying identity with two or more independent factors",
+      "Logging in from multiple devices simultaneously",
+      "Encrypting your password database",
+    ],
+    correct: 1,
+    explanation: "MFA requires two or more independent verification factors: something you know (password), something you have (authenticator app), or something you are (biometric).",
+  },
+  {
+    id: 8,
+    question: "An attacker tries every possible character combination to guess a password. This is called:",
+    options: ["Phishing", "Dictionary attack", "Brute force attack", "SQL injection"],
+    correct: 2,
+    explanation: "Brute force systematically tries all combinations. Dictionary attacks use wordlists. The key difference: brute force has no prior assumptions about the password.",
+  },
+  {
+    id: 9,
+    question: "Which is the SAFEST way to recover a forgotten password?",
+    options: [
+      "Security question (mother's maiden name)",
+      "Email link with time-limited token",
+      "SMS code to phone number",
+      "Admin resets it to a default",
+    ],
+    correct: 1,
+    explanation: "Time-limited email tokens are the safest — they expire quickly, go to a registered email, and don't rely on guessable personal information like security questions.",
+  },
+  {
+    id: 10,
+    question: "What does HIBP (Have I Been Pwned) help you check?",
+    options: [
+      "Password strength",
+      "Whether your email appears in known data breaches",
+      "If your antivirus is up to date",
+      "Open ports on your network",
+    ],
+    correct: 1,
+    explanation: "HaveIBeenPwned.com (by Troy Hunt) lets you check if your email or password appears in publicly known data breach databases.",
+  },
+]

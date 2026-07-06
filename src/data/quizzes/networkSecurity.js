@@ -1,0 +1,123 @@
+// Network Security Quiz - 10 questions
+export const networkSecurity = [
+  {
+    id: 1,
+    question: "What does a firewall primarily do?",
+    options: [
+      "Encrypts all network traffic",
+      "Filters incoming and outgoing network traffic based on rules",
+      "Detects and removes malware from files",
+      "Backs up network data automatically",
+    ],
+    correct: 1,
+    explanation: "A firewall monitors and controls network traffic using predefined rules, blocking unauthorized access while allowing legitimate communications.",
+  },
+  {
+    id: 2,
+    question: "What is a 'man-in-the-middle' (MitM) attack?",
+    options: [
+      "An attack where a hacker gains physical access to a server",
+      "An attacker secretly intercepts and potentially alters communication between two parties",
+      "A type of denial-of-service attack",
+      "Social engineering a middle manager in a company",
+    ],
+    correct: 1,
+    explanation: "In MitM attacks, the attacker positions themselves between two communicating parties, intercepting or altering messages without either party knowing.",
+  },
+  {
+    id: 3,
+    question: "What does VPN stand for and what is its primary security purpose?",
+    options: [
+      "Virtual Private Node — speeds up internet connections",
+      "Virtual Private Network — encrypts traffic and masks your IP address",
+      "Verified Private Network — authenticates websites",
+      "Virtual Protection Network — blocks malware",
+    ],
+    correct: 1,
+    explanation: "A VPN creates an encrypted tunnel between your device and a server, hiding your IP and protecting your traffic from eavesdropping on untrusted networks.",
+  },
+  {
+    id: 4,
+    question: "What is a DDoS attack?",
+    options: [
+      "Decrypting Data on Servers — breaking encryption",
+      "Distributed Denial of Service — overwhelming a target with traffic from many sources",
+      "Direct Domain Spoofing — faking DNS entries",
+      "Dynamic Data Overwrite System — corrupting files",
+    ],
+    correct: 1,
+    explanation: "DDoS attacks flood a target with traffic from thousands of compromised devices (botnets), overwhelming its capacity and making it unavailable to legitimate users.",
+  },
+  {
+    id: 5,
+    question: "What does SSL/TLS protect in web communications?",
+    options: [
+      "Physical server hardware",
+      "Data in transit between client and server (encryption + authentication)",
+      "Data stored in server databases",
+      "User passwords inside the browser",
+    ],
+    correct: 1,
+    explanation: "SSL/TLS encrypts data in transit, preventing eavesdropping, and authenticates the server via certificates — this is what HTTPS provides.",
+  },
+  {
+    id: 6,
+    question: "What is a 'zero-day' vulnerability?",
+    options: [
+      "A bug with zero security impact",
+      "A vulnerability unknown to the software vendor, with no patch available",
+      "A flaw discovered and patched on the same day",
+      "A vulnerability that only works for 24 hours",
+    ],
+    correct: 1,
+    explanation: "Zero-day means the vendor has had 'zero days' to fix it. These are extremely dangerous because defenders have no patch to deploy against attackers exploiting them.",
+  },
+  {
+    id: 7,
+    question: "What is port scanning used for by attackers?",
+    options: [
+      "Speeding up network connections",
+      "Discovering open ports and running services to identify attack surfaces",
+      "Encrypting network ports",
+      "Blocking unauthorized USB devices",
+    ],
+    correct: 1,
+    explanation: "Attackers use tools like Nmap to scan for open ports, revealing services running on a host and identifying potential vulnerabilities to exploit.",
+  },
+  {
+    id: 8,
+    question: "What is the purpose of network segmentation?",
+    options: [
+      "To increase internet speed by splitting bandwidth",
+      "To isolate parts of a network, limiting lateral movement if one segment is compromised",
+      "To share passwords securely between departments",
+      "To compress network packets for efficiency",
+    ],
+    correct: 1,
+    explanation: "Segmentation divides a network into zones. If attackers breach one segment (e.g., guest Wi-Fi), they cannot easily reach other segments (e.g., internal systems).",
+  },
+  {
+    id: 9,
+    question: "What does an IDS (Intrusion Detection System) do?",
+    options: [
+      "Actively blocks all malicious traffic",
+      "Monitors network traffic and alerts on suspicious activity",
+      "Encrypts sensitive network packets",
+      "Manages user access control lists",
+    ],
+    correct: 1,
+    explanation: "An IDS detects and alerts on suspicious activity but doesn't block it. An IPS (Intrusion Prevention System) both detects AND blocks threats in real time.",
+  },
+  {
+    id: 10,
+    question: "Why is using public Wi-Fi without a VPN risky?",
+    options: [
+      "Public Wi-Fi is always slower",
+      "Attackers on the same network can intercept unencrypted traffic",
+      "Public Wi-Fi blocks HTTPS connections",
+      "Your device gets a public IP address",
+    ],
+    correct: 1,
+    explanation: "On public Wi-Fi, other users can capture traffic using tools like Wireshark. Without encryption (VPN or HTTPS), passwords and data can be read in plaintext.",
+  },
+]
